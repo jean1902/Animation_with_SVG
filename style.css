@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#FFFFFF,#b34ef6);
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family:"Bariol";
+    src: url("font/bariol.ttf");
+}
+@font-face {
+    font-family:"Bariolthin";
+    src: url("font/bariolthin1.ttf");
+}
+h1{
+    float: left;
+    margin-left: 10px;
+    font-family: "Bariol";
+}
+.main{
+    clear: both;
+    margin-left: 10px;
+}
+h1:hover{
+    color: plum;
+}
+h3{
+    padding-top: 30px;
+    margin-left: 40px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.link_liste a:hover{
+    color: plum;
+}
+nav{
+    float: right;
+    margin-top: 10px;
+    
+}
+nav ul li {
+    display: inline-block;
+    font-family: "Bariolthin";
+}
+nav ul li a {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+svg{
+    height: 50%;
+    width: 50%;
+}
+.svg{
+    text-align: right;
+}
+#skate_bord{
+    animation: skate_bord  2s linear infinite;
+}
+@keyframes skate_bord{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(25deg);
+    }
+}
